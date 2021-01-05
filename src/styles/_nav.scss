@@ -1,0 +1,35 @@
+nav {
+  min-height: 10vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  button {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    // border: 2px solid rgb(54, 54, 54);
+    border-radius: 60px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    .img-logo {
+      height: 3rem;
+      width: 3rem;
+      background: transparent;
+    }
+    &:hover {
+      background: rgba(155, 155, 155, 0.5);
+      border: transparent;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+} ;
